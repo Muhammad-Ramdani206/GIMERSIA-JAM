@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://b0v5cmg38qso1"]
 
 [ext_resource type="PackedScene" uid="uid://buccgkfuxuhd2" path="res://Floor.tscn" id="1_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://cpox7bxl8aoxv" path="res://background.tscn" id="1_feb5d"]
 [ext_resource type="PackedScene" uid="uid://bcejft0dk7xqx" path="res://player.tscn" id="2_feb5d"]
 
 [node name="Game" type="Node2D" unique_id=79362432]
+
+[node name="Parallax2D" parent="." unique_id=1278321024 instance=ExtResource("1_feb5d")]
+scroll_scale = Vector2(1800, 1200)
 
 [node name="StaticBody2D" parent="." unique_id=895129861 instance=ExtResource("1_e2o6t")]
 
